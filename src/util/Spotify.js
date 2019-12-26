@@ -12,7 +12,7 @@ const Spotify = {
       window.history.pushState('Access Token', null, '/');
       return accessToken;
     } else {
-      const redirectURI = 'http://localhost:3000/';
+      const redirectURI = 'https://samfolo_jammming.surge.sh';
       window.location = `https://accounts.spotify.com/authorize?client_id=${process.env.REACT_APP_SPOTIFY_CLIENT_ID}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectURI}`;
     }
   },
